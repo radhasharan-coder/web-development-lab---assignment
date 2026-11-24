@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Expense Tracker</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="wrapper">
+        <h1>Student Expense Tracker</h1>
+
+        <form class="expense-form">
+            <input type="text" placeholder="Expense name" />
+            <input type="number" step="0.01" placeholder="Amount" />
+            <select>
+                <option>Food</option>
+                <option>Travel</option>
+                <option>Shopping</option>
+                <option>Education</option>
+                <option>Other</option>
+            </select>
+            <button type="submit">Add Expense</button>
+        </form>
+
+        <div class="summary-line">
+            <div>
+                <label for="filter">Filter by Category:</label>
+                <select id="filter">
+                    <option>All</option>
+                    <option>Food</option>
+                    <option>Travel</option>
+                    <option>Shopping</option>
+                    <option>Education</option>
+                    <option>Other</option>
+                </select>
+            </div>
+            <div class="total-box">Total: ₹1,145.00</div>
+        </div>
+
+        <table>
+            <tr>
+                <th>Expense Name</th>
+                <th>Category</th>
+                <th>Amount</th>
+                <th>Action</th>
+            </tr>
+            <tr>
+                <td>Canteen Lunch</td>
+                <td>Food</td>
+                <td>₹120.00</td>
+                <td><button type="button" class="del-btn">Delete</button></td>
+            </tr>
+            <tr>
+                <td>Bus Pass</td>
+                <td>Travel</td>
+                <td>₹250.00</td>
+                <td><button type="button" class="del-btn">Delete</button></td>
+            </tr>
+            <tr>
+                <td>Notebook</td>
+                <td>Education</td>
+                <td>₹180.00</td>
+                <td><button type="button" class="del-btn">Delete</button></td>
+            </tr>
+            <tr>
+                <td>Pen &amp; Folder</td>
+                <td>Shopping</td>
+                <td>₹345.00</td>
+                <td><button type="button" class="del-btn">Delete</button></td>
+            </tr>
+            <tr>
+                <td>Xerox</td>
+                <td>Other</td>
+                <td>₹250.00</td>
+                <td><button type="button" class="del-btn">Delete</button></td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>
